@@ -11,10 +11,7 @@ const EditPrompt = () => {
   const promptId = searchParams.get("id");
 
   const [submitting, setSubmitting] = useState(false);
-  const [post, setPost] = useState({
-    prompt: "",
-    tag: "",
-  });
+  const [post, setPost] = useState({ prompt: "", tag: "" });
 
   useEffect(() => {
     const getPromptDetails = async () => {
@@ -34,7 +31,7 @@ const EditPrompt = () => {
     e.preventDefault();
     setSubmitting(true);
 
-    if (!promptId) return alert("Prompt ID not found");
+    if (!promptId) return alert("Missing PromptId!");
 
     try {
       const response = await fetch(`/api/prompt/${promptId}`, {
