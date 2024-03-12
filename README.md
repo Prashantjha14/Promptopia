@@ -1,5 +1,6 @@
 <div align="center">
   <h1 align="center">Welcome to the Next.js 14 AI Prompt Sharing Application!</h1>
+  <p>Check out the project at <a href="https://promptopia-pj.vercel.app">https://promptopia-pj.vercel.app</a></p>
 </div>
 
 ## <a name="introduction">🤖 Introduction</a>
