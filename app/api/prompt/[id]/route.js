@@ -45,7 +45,7 @@ export const PATCH = async (request, { params }) => {
       status: 200,
     });
   } catch (error) {
-    console.log("AN error!");
+    console.error("AN error!", error);
     return new Response("Failed to update prompt", {
       status: 500,
     });
